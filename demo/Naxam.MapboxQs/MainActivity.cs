@@ -21,7 +21,7 @@ namespace Naxam.MapboxQs
 			//ToolbarResource = Resource.Layout.Toolbar;
 
 			base.OnCreate(bundle);
-			MapboxAccountManager.GetInstance(this, Resources.GetString(Resource.String.access_token));
+			var mapboxInstance = MapboxAccountManager.GetInstance(this);
 
 			SetContentView(Resource.Layout.Main);
             System.Diagnostics.Debug.WriteLine("===========" + Com.Mapbox.Mapboxsdk.BuildConfig.VersionName + "   " + Com.Mapbox.Mapboxsdk.BuildConfig.VersionCode);
@@ -29,7 +29,7 @@ namespace Naxam.MapboxQs
 			//mapView.StyleUrl = Style.MapboxStreets;
 			mapView.OnCreate(bundle);
 
-			mapView.GetMapAsync(this);
+			//mapView.GetMapAsync(this);
 
             //global::Xamarin.Forms.Forms.Init(this, bundle);
 
