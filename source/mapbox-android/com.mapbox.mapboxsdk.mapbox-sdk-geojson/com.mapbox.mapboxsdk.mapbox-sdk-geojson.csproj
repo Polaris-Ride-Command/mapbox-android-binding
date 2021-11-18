@@ -57,6 +57,11 @@
   <ItemGroup>
     <EmbeddedJar Include="Jars\mapbox-sdk-geojson-5.3.0.jar" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GoogleGson">
+      <Version>2.8.8.2</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
