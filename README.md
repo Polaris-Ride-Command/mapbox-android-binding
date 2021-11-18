@@ -15,7 +15,7 @@ We specialize in developing mobile applications using Xamarin and native technol
 ## Installation
 
 ```
-Install-Package Naxam.Mapbox.Droid
+
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ NOTE: Have to build custom AAR because of Java8 & lint.jar duplication.
 
 ## Upgrade
 ```
-sh build.sh --settings_skipverification=true
+
 ```
 
 ## License

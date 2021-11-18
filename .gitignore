@@ -8,7 +8,7 @@ packages/
 TestResults/
 .vscode/
 .vs/
-tools/
+
 # nugets/
 
 # globs
@@ -43,8 +43,5 @@ Thumbs.db
 # dotCover
 *.dotCover
 
-externals/
-generated/
-output/
-binderator
-models.json
+*.aar
+*.jar
