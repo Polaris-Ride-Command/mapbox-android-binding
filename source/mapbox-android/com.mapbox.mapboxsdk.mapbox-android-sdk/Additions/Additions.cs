@@ -1,7 +1,5 @@
 ﻿using System;
 using Android.Runtime;
-using Com.Mapbox.Android.Core.Location;
-using Java.Lang;
 
 namespace Com.Mapbox.Mapboxsdk.Annotations
 {
