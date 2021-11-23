@@ -56,6 +56,11 @@
   <ItemGroup>
     <LibraryProjectZip Include="Jars\mapbox-android-accounts-0.7.0.aar" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Annotation">
+      <Version>1.2.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

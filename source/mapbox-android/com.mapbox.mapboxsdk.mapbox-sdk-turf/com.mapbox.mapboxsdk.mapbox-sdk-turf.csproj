@@ -56,6 +56,17 @@
   <ItemGroup>
     <EmbeddedJar Include="Jars\mapbox-sdk-turf-5.3.0.jar" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-geojson\com.mapbox.mapboxsdk.mapbox-sdk-geojson.csproj">
+      <Project>{F850ADD3-28C1-46DB-AFBC-EF47240D6004}</Project>
+      <Name>com.mapbox.mapboxsdk.mapbox-sdk-geojson</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GoogleGson">
+      <Version>2.8.8.2</Version>
+    </PackageReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
