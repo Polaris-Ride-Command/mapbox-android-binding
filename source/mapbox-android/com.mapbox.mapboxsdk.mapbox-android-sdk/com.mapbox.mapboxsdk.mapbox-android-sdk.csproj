@@ -56,7 +56,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\mapbox-android-sdk-9.7.0.aar" />
+    <EmbeddedJar Include="Jars\mapbox-android-sdk-9.7.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core.csproj">

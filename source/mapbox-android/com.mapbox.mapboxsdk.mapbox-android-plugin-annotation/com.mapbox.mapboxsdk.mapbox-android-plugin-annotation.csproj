@@ -55,7 +55,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\mapbox-android-plugin-annotation-v9-0.9.0.aar" />
+    <EmbeddedJar Include="Jars\mapbox-android-plugin-annotation-v9-0.9.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.AppCompat">

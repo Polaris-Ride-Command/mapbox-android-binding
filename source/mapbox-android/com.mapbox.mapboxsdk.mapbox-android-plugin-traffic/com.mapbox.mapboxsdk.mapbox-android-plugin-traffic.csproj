@@ -55,7 +55,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\mapbox-android-plugin-traffic-v9-0.10.0.aar" />
+    <EmbeddedJar Include="Jars\mapbox-android-plugin-traffic-v9-0.10.0.jar" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.Annotation">
