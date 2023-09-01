@@ -26,39 +26,14 @@
       <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="1.9.0.1" />
     </ItemGroup>
 
-<!--  <ItemGroup>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk\com.mapbox.mapboxsdk.mapbox-android-sdk.csproj">
-      <Project>{0F3F5598-6F66-4CDC-B41D-354B0495CEC8}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-sdk</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-accounts\com.mapbox.mapboxsdk.mapbox-android-accounts.csproj">
-      <Project>{10CEE859-93C2-4C85-9D8A-655533DEB0D0}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-accounts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-core\com.mapbox.mapboxsdk.mapbox-android-core.csproj">
-      <Project>{9A5C4703-3D5A-4FCB-BDC7-422BDE645157}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-gestures\com.mapbox.mapboxsdk.mapbox-android-gestures.csproj">
-      <Project>{3507B359-08CF-4D82-8CF6-979976C7F840}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-gestures</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core.csproj">
-      <Project>{1621A511-5CB6-49F6-8142-532ACBC7E8D1}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-turf\com.mapbox.mapboxsdk.mapbox-sdk-turf.csproj">
-      <Project>{EEEBFE2C-52BE-4FF2-AAA6-C6B10D693B06}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-sdk-turf</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-telemetry\com.mapbox.mapboxsdk.mapbox-android-telemetry.csproj">
-      <Project>{CEEC48A8-52E0-4C74-AE70-9C66319ED344}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-telemetry</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-geojson\com.mapbox.mapboxsdk.mapbox-sdk-geojson.csproj">
-      <Project>{F850ADD3-28C1-46DB-AFBC-EF47240D6004}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-sdk-geojson</Name>
-    </ProjectReference>
-  </ItemGroup>-->
-
+    <ItemGroup>
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk\com.mapbox.mapboxsdk.mapbox-android-sdk.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-accounts\com.mapbox.mapboxsdk.mapbox-android-accounts.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-core\com.mapbox.mapboxsdk.mapbox-android-core.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-gestures\com.mapbox.mapboxsdk.mapbox-android-gestures.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-turf\com.mapbox.mapboxsdk.mapbox-sdk-turf.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-telemetry\com.mapbox.mapboxsdk.mapbox-android-telemetry.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-geojson\com.mapbox.mapboxsdk.mapbox-sdk-geojson.csproj" />
+    </ItemGroup>
 </Project>
