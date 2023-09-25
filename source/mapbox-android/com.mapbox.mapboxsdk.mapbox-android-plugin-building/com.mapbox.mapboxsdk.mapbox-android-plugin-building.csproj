@@ -1,128 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7D5ABFD1-724C-44BE-A7C5-9943C6671AE1}</ProjectGuid>
-    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>net7.0-android</TargetFramework>
+    <IsBindingProject>true</IsBindingProject>
+    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>com.mapbox.mapboxsdk.mapbox_android_plugin_building</RootNamespace>
     <AssemblyName>com.mapbox.mapboxsdk.mapbox_android_plugin_building</AssemblyName>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>True</Deterministic>
-    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
-    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
-    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>portable</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>portable</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Mono.Android" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Jars\AboutJars.txt" />
-    <None Include="Additions\AboutAdditions.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <TransformFile Include="Transforms\Metadata.xml" />
-    <TransformFile Include="Transforms\EnumFields.xml" />
-    <TransformFile Include="Transforms\EnumMethods.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <LibraryProjectZip Include="Jars\mapbox-android-plugin-building-v9-0.7.0.aar" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.Annotation">
-      <Version>1.2.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.Utils">
-      <Version>1.0.0.10</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.Core">
-      <Version>1.6.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.AndroidX.Fragment">
-      <Version>1.3.6.3</Version>
-    </PackageReference>
-    <PackageReference Include="GoogleGson">
-      <Version>2.8.8.2</Version>
-    </PackageReference>
-    <PackageReference Include="Square.OkHttp3">
-      <Version>4.9.2</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Kotlin.StdLib">
-      <Version>1.5.31.2</Version>
-    </PackageReference>
-    <PackageReference Include="Xamarin.Kotlin.StdLib.Common">
-      <Version>1.5.31.2</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk\com.mapbox.mapboxsdk.mapbox-android-sdk.csproj">
-      <Project>{0F3F5598-6F66-4CDC-B41D-354B0495CEC8}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-sdk</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-accounts\com.mapbox.mapboxsdk.mapbox-android-accounts.csproj">
-      <Project>{10CEE859-93C2-4C85-9D8A-655533DEB0D0}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-accounts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-core\com.mapbox.mapboxsdk.mapbox-android-core.csproj">
-      <Project>{9A5C4703-3D5A-4FCB-BDC7-422BDE645157}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-gestures\com.mapbox.mapboxsdk.mapbox-android-gestures.csproj">
-      <Project>{3507B359-08CF-4D82-8CF6-979976C7F840}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-gestures</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core.csproj">
-      <Project>{1621A511-5CB6-49F6-8142-532ACBC7E8D1}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-turf\com.mapbox.mapboxsdk.mapbox-sdk-turf.csproj">
-      <Project>{EEEBFE2C-52BE-4FF2-AAA6-C6B10D693B06}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-sdk-turf</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-telemetry\com.mapbox.mapboxsdk.mapbox-android-telemetry.csproj">
-      <Project>{CEEC48A8-52E0-4C74-AE70-9C66319ED344}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-android-telemetry</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-geojson\com.mapbox.mapboxsdk.mapbox-sdk-geojson.csproj">
-      <Project>{F850ADD3-28C1-46DB-AFBC-EF47240D6004}</Project>
-      <Name>com.mapbox.mapboxsdk.mapbox-sdk-geojson</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
+    <ItemGroup>
+        <AndroidLibrary Include="Jars\mapbox-android-plugin-building-v9-0.7.0.jar" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.7.0.1" />
+      <PackageReference Include="Xamarin.AndroidX.Legacy.Support.Core.Utils" Version="1.0.0.20" />
+      <PackageReference Include="Xamarin.AndroidX.Core" Version="1.12.0.1" />
+      <PackageReference Include="Xamarin.AndroidX.Fragment" Version="1.6.1.1" />
+      <PackageReference Include="GoogleGson" Version="2.10.1.5" />
+      <PackageReference Include="Square.OkHttp3" Version="4.11.0.2" />
+      <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.9.10.1" />
+      <PackageReference Include="Xamarin.Kotlin.StdLib.Common" Version="1.9.10.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk\com.mapbox.mapboxsdk.mapbox-android-sdk.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-accounts\com.mapbox.mapboxsdk.mapbox-android-accounts.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-core\com.mapbox.mapboxsdk.mapbox-android-core.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-gestures\com.mapbox.mapboxsdk.mapbox-android-gestures.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core\com.mapbox.mapboxsdk.mapbox-android-sdk-gl-core.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-turf\com.mapbox.mapboxsdk.mapbox-sdk-turf.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-android-telemetry\com.mapbox.mapboxsdk.mapbox-android-telemetry.csproj" />
+      <ProjectReference Include="..\com.mapbox.mapboxsdk.mapbox-sdk-geojson\com.mapbox.mapboxsdk.mapbox-sdk-geojson.csproj" />
+    </ItemGroup>
 </Project>

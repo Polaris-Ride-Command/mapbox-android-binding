@@ -43,7 +43,7 @@ Thumbs.db
 # dotCover
 *.dotCover
 
-*.aar
-*.jar
+# *.aar
+# *.jar
 
 output/
