@@ -10,6 +10,6 @@ dotnet build -t:Build -p:Configuration=Release ./source/mapbox-android/com.mapbo
 # note: after moving plugin-annotation, all dependencies are built and copied. only need to move the 2 other specific plugin files
 
 rm -rf ./output
-mv -f ./source/mapbox-android/com.mapbox.mapboxsdk.mapbox-android-plugin-annotation/bin/Release/net7.0-android/ ./output
-mv -f ./source/mapbox-android/com.mapbox.mapboxsdk.mapbox-android-plugin-building/bin/Release/net7.0-android/com.mapbox.mapboxsdk.mapbox_android_plugin_building.* ./output
-mv -f ./source/mapbox-android/com.mapbox.mapboxsdk.mapbox-android-plugin-traffic/bin/Release/net7.0-android/com.mapbox.mapboxsdk.mapbox_android_plugin_traffic.* ./output
+mv -f ./source/mapbox-android/com.mapbox.mapboxsdk.mapbox-android-plugin-annotation/bin/Release/net8.0-android/ ./output
+mv -f ./source/mapbox-android/com.mapbox.mapboxsdk.mapbox-android-plugin-building/bin/Release/net8.0-android/com.mapbox.mapboxsdk.mapbox_android_plugin_building.* ./output
+mv -f ./source/mapbox-android/com.mapbox.mapboxsdk.mapbox-android-plugin-traffic/bin/Release/net8.0-android/com.mapbox.mapboxsdk.mapbox_android_plugin_traffic.* ./output

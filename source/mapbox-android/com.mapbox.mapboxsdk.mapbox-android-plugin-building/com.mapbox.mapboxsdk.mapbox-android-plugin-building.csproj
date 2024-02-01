@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0-android</TargetFramework>
+    <TargetFramework>net8.0-android</TargetFramework>
     <IsBindingProject>true</IsBindingProject>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
@@ -12,7 +12,7 @@
   </PropertyGroup>
 
     <ItemGroup>
-        <AndroidLibrary Include="Jars\mapbox-android-plugin-building-v9-0.7.0.jar" />
+        <AndroidLibrary Include="Jars\mapbox-android-plugin-building-v9-0.7.0.aar" />
     </ItemGroup>
 
     <ItemGroup>
